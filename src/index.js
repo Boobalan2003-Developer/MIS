@@ -3,41 +3,39 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {
+  createHashRouter,
+  RouterProvider
+} from 'react-router-dom';
+
 import Registrationpage from './Registrationpage';
-// import Loginpage from './Loginpage';
 import Dashboard from './Dashboard';
-// import Enquiryform from './Enquiryform';
-// import App from './App';
 import Mirdula from './Mirudula';
+import ErrorPage from './ErrorPage';   // new import
 
-
-const router =createBrowserRouter([
+const router = createHashRouter([
   {
-    path:'/',
-    element:<Mirdula/>
+    path: '/',
+    element: <Mirdula />,
+    errorElement: <ErrorPage />   // proper error boundary
   },
-  // {
-  //   path:'/Enquiryform',
-  //   element:<Enquiryform/>
-  // },
   {
-    path:'/Registrationpage',
-    element:<Registrationpage/>
-  },{
-    path:'/Dashboard',
-    element:<Dashboard/>
+    path: '/Registrationpage',
+    element: <Registrationpage />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '/Dashboard',
+    element: <Dashboard />,
+    errorElement: <ErrorPage />
   }
-])
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

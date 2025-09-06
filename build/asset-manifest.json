@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/MIS/static/css/main.094874bd.css",
-    "main.js": "/MIS/static/js/main.a062cc8a.js",
+    "main.js": "/MIS/static/js/main.85ac8406.js",
     "static/js/453.287cd74d.chunk.js": "/MIS/static/js/453.287cd74d.chunk.js",
     "static/media/usericon.png": "/MIS/static/media/usericon.61bf66ccc7d1c3180e92.png",
     "static/media/5-Indian-Design-Mark.png": "/MIS/static/media/5-Indian-Design-Mark.d5e69b693169946c77b1.png",
     "index.html": "/MIS/index.html",
     "main.094874bd.css.map": "/MIS/static/css/main.094874bd.css.map",
-    "main.a062cc8a.js.map": "/MIS/static/js/main.a062cc8a.js.map",
+    "main.85ac8406.js.map": "/MIS/static/js/main.85ac8406.js.map",
     "453.287cd74d.chunk.js.map": "/MIS/static/js/453.287cd74d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.094874bd.css",
-    "static/js/main.a062cc8a.js"
+    "static/js/main.85ac8406.js"
   ]
 }
