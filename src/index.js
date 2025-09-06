@@ -10,25 +10,26 @@ import {
 
 import Registrationpage from './Registrationpage';
 import Dashboard from './Dashboard';
-import Mirdula from './Mirudula';
+// import Mirdula from './Mirudula';
 import ErrorPage from './ErrorPage';   // new import
 
 const router = createHashRouter([
   {
     path: '/',
-    element: <Mirdula />,
-    errorElement: <ErrorPage />   // proper error boundary
+    element: <Dashboard />,
+    errorElement: <ErrorPage />
   },
   {
     path: '/Registrationpage',
     element: <Registrationpage />,
     errorElement: <ErrorPage />
+      // proper error boundary
   },
-  {
-    path: '/Dashboard',
-    element: <Dashboard />,
-    errorElement: <ErrorPage />
-  }
+  // {
+  //   path: '/',
+  //   element: <Mirdula />,
+  //   errorElement: <ErrorPage /> 
+  // },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
