@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Registrationpage from './Registrationpage';
 // import Loginpage from './Loginpage';
 import Dashboard from './Dashboard';
-import Enquiryform from './Enquiryform';
+// import Enquiryform from './Enquiryform';
 // import App from './App';
 import Mirdula from './Mirudula';
 
